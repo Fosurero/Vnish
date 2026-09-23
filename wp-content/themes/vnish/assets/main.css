@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400..600&display=swap');
+/* Базовые сбросы */
+* {margin: 0;box-sizing: border-box;}
+html, body {height: 100%;overflow-x: clip;margin: 0;}
+body {font-family: "Inter", Sans-serif!important;font-size: 16px;display: flex;flex-direction: column;min-height: 100vh;}
+footer {margin-top: auto;}
+
+
+.elementor-button span {text-align: initial;}
+
+
+/* ===== MENU ===== */
+.elementor-nav-menu .sub-arrow svg{transition:transform 0.5s}
+.elementor-nav-menu a[aria-expanded="true"] .sub-arrow svg{transform: rotate(180deg);}
+.elementor-menu-overlay {position: fixed;top:62px;left: 0;width: 100%;height: 100%;background: rgba(0, 0, 0, 0.5);z-index: 999;opacity: 0;visibility: hidden;transition: opacity 0.3s ease, visibility 0.3s ease;}
+.elementor-menu-overlay.active {opacity: 1;visibility: visible;}
+body.menu-open {overflow: hidden !important;}
+.elementor-nav-menu--dropdown {z-index: 9999 !important;}
+.elementor-menu-toggle {position: relative;z-index: 10000;}
+
+/* Липкий хедер */
+.elementor-location-header,.elementor .header {transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),box-shadow 0.3s ease;position: relative;z-index: 1000;}
+.elementor-location-header.sticky-active,.elementor .header.sticky-active {position: fixed !important;top: 0;left: 0;right: 0;width: 100%;z-index: 9999;background: #fff;box-shadow: 0 2px 20px rgba(0,0,0,0.08);}
+
+
+
+
+
+ul {margin: 20px 0;}
+.elementor-nav-menu li:first-child a:after {background: transparent!important;}
+
+
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+	.elementor-nav-menu--dropdown.elementor-nav-menu__container {position: fixed;left: 0;top: 62px;width: 100%;max-width: 270px;display: block !important;height: 100vh;margin-top: 0 !important;z-index: 999;}
+	.elementor-item.has-submenu {display: flex;justify-content: space-between;}
+	
+}
+
+
+
+
+

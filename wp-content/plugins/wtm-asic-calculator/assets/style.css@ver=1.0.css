@@ -1,0 +1,32 @@
+#wtm-calculator{color: #fff;width: 100%;padding: 20px;box-shadow: 0 10px 30px #00000080;border-radius: 20px;font-size: 24px;font-weight: bold;}
+.wtm-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-bottom:12px}
+#wtm-calc{width: 100%;padding: 12px;border: 0;border-radius: 10px;background-image: linear-gradient(90deg, var(--e-global-color-primary) 0%, #d57b27 100%);cursor: pointer;line-height: 1;color: #fff;}
+.wtm-table{width:100%;margin-top:15px;border-collapse:collapse}
+.wtm-table th,.wtm-table td{padding:8px;border-color: transparent;border-bottom:1px solid #333;text-align:right;font-size:12px;}
+.wtm-table th:first-child,.wtm-table td:first-child{text-align:left}
+.wtm-top{background:#4ade8026}
+.wtm-bad{opacity:.45}
+.wtm-row{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:12px}
+.wtm-row select,.wtm-row input{flex:1;background-color: #1d1f21;border: 1px solid #595e62;padding: 10px 15px;color: #C8C8C8;font-size: 16px;}
+#wtm-asic{flex:2}
+.wtm-currency-switch{display:flex;border:1px solid #333;border-radius:8px;overflow:hidden;background:#1b1b1b;min-width:180px}
+.wtm-currency-option{flex:1;padding:0 10px;text-align:center;cursor:pointer;transition:all .2s ease;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;line-height: 1;}
+.wtm-currency-option:hover{background:#2a2a2a}
+.wtm-currency-option.active{background-image: linear-gradient(90deg, var(--e-global-color-primary) 0%, #d57b27 100%);color:#000;font-weight:600}
+.wtm-currency-option span{font-size:14px;font-weight:500}
+.wtm-rate{font-size:10px;opacity:.7;font-weight:400}
+.wtm-currency-option.active .wtm-rate{color:#000;opacity:.8}
+.wtm-error{color:#ff6b6b;background:#ff6b6b1a;padding:10px;border-radius:8px;text-align:center;margin-top:15px}
+.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.wtm-table th:first-child, .wtm-table td:first-child{position:sticky;left:0;z-index:2;}
+.wtm-table th:first-child, .wtm-table td:first-child{white-space:nowrap;padding:10px 12px}
+
+@media (max-width: 767px) {
+.wtm-row{flex-direction:column;flex-wrap: nowrap;}
+.wtm-asic-info{flex-direction:column;align-items:flex-start;gap:5px}
+.table-wrap{overflow-x:auto}
+.wtm-table th:first-child,.wtm-table td:first-child{background:#1d1f21;border-left: 0;}
+.wtm-currency-option {flex-direction: row;height: 40px;}
+.wtm-table th {min-width: 76px;line-height: 1.5;text-align: center;}
+}
+
